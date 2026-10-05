@@ -1,0 +1,10 @@
+# Upstream speaker driver clone; DKMS may point at it, so it stays in place
+snd_hda_macbookpro/
+
+# Wi-Fi board NVRAM: contains the machine's real MAC address
+brcmfmac*.txt
+
+# Backups, in case one ends up here
+full-*/
+*.tar.zst
+*.img
