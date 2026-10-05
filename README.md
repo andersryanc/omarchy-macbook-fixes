@@ -8,6 +8,8 @@ through [t1bridge](https://github.com/standardagents/t1bridge).
 | --- | --- |
 | [`backup-omarchy.sh`](backup-omarchy.sh) | Full backup of a running LUKS + btrfs install to an external drive: one archive plus the disk metadata needed to rebuild the disk exactly. |
 | [`restore-omarchy.sh`](restore-omarchy.sh) | Bare-metal restore of that backup from a live USB. Every identifier comes back unchanged, so the system boots without edits. On a T1 Mac it can also swap in a new `EFI/APPLE` (Touch Bar firmware) during the restore. |
+| [`docs/fresh-install.md`](docs/fresh-install.md) | Fallback guide: take a **fresh Omarchy install** on this MacBook back to a fully working machine (T1 firmware, Touch Bar, Wi-Fi NVRAM, speakers, GPU fixes, USB-C, SSH, your files). |
+| [`files/`](files/) | Config files the guide installs: PipeWire speaker crossover, AMD GPU udev rule, GPU switch scripts, USB-C power aliases. |
 
 The backup and restore scripts aren't Mac-specific. They work on any machine whose layout
 matches the [requirements](#requirements) (Omarchy's default install does).
